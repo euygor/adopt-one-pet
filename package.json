@@ -1,0 +1,13 @@
+{
+  "name": "next-laravel",
+  "version": "1.0.0",
+  "scripts": {
+    "dependences": "npm install && cd ./backend && composer install && cd ../frontend && npm install",
+    "client": "cd frontend && npm run dev",
+    "server": "cd backend && php artisan serve",
+    "dev": "concurrently --kill-others-on-fail \"npm run server\" \"npm run client\""
+  },
+  "devDependencies": {
+    "concurrently": "^3.5.0"
+  }
+}
